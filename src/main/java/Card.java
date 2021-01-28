@@ -1,12 +1,12 @@
 public class Card {
 
-    private String suit;
+    private SuitType suit;
 
-    public Card(String suit) {
+    public Card(SuitType suit) {
         this.suit = suit;
     }
 
-    public String getSuit() {
+    public SuitType getSuit() {
         return this.suit;
     }
 }

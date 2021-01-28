@@ -9,14 +9,20 @@ public class CardTest {
 
     @Before
     public void before() {
-        card = new Card("Hearts");
+        card = new Card(SuitType.HEARTS);
     }
 
 
     @Test
     public void canGetSuit() {
-        assertEquals("Hearts", card.getSuit());
+        assertEquals(SuitType.HEARTS, card.getSuit());
     }
+
+//    @Test
+//    public void suitCanBeMispelled() {
+//        card = new Card("Heeearrts");
+//        assertEquals("Heeearrts", card.getSuit());
+//    }
 
 
 
